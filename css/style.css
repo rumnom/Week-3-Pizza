@@ -1,5 +1,105 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* mobile state */
+.desktopView {
+  display: none;
+}
+
+#mainSection {
+  min-height: 100vh;
+  margin-bottom: -75px;
+}
+
+/* Footer */
+#footerLeft {
+  display: none;
+}
+
+footer {
+  background-color: black;
+  height: 75px;
+  color: white;
+}
+
+#footerRight {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 75px;
+}
+
+#footerRight i {
+  font-size: 40px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+#footerRight i:hover {
+  color: rgb(218, 26, 50);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  background-color: black;
+}
+
+header .mobileView img {
+  width: 90vw;
+  height: 60px;
+}
+
+/* body */
+.banner {
+  background-image: url(../images/img_0.jpg);
+  background-size: cover;
+  height: 85vh;
+}
+
+main .mobileView ul li {
+  padding: 10px 0px;
+  text-align: center;
+  margin: 10px 0px;
+  background-color: rgb(218, 26, 50);
+}
+
+main .mobileView ul li {
+  color: white;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+}
+
+.mobileView .banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  color: antiquewhite;
+  text-shadow: 0.1em 0.1em 0 hsl(200 50% 30%);
+}
+
+.mobileView .banner-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 5vh;
+}
+
+.mobileView .banner-text p {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: capitalize;
 }
