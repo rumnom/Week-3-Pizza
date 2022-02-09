@@ -20,7 +20,7 @@ body {
   margin-bottom: -75px;
 }
 
-/* Footer */
+/* Footer  */
 #footerLeft {
   display: none;
 }
@@ -64,7 +64,7 @@ header .mobileView img {
 
 /* body */
 .banner {
-  background-image: url(../images/img_0.jpg);
+  background-image: url("../images/img_0.jpg");
   background-size: cover;
   height: 85vh;
 }
@@ -76,7 +76,7 @@ main .mobileView ul li {
   background-color: rgb(218, 26, 50);
 }
 
-main .mobileView ul li {
+main .mobileView ul a {
   color: white;
   text-decoration: none;
   font-size: large;
