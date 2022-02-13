@@ -10,7 +10,16 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* mobile state */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100vw;
+  height: 75px;
+}
+
+/* Mobile State */
 .desktopView {
   display: none;
 }
@@ -20,12 +29,15 @@ body {
   margin-bottom: -75px;
 }
 
-/* Footer  */
+/* Footer */
 #footerLeft {
   display: none;
 }
 
 footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
   background-color: black;
   height: 75px;
   color: white;
@@ -35,6 +47,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  width: 100vw;
   height: 75px;
 }
 
@@ -53,8 +66,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75px;
   background-color: black;
+  width: 100vw;
+  height: 75px;
 }
 
 header .mobileView img {
@@ -70,13 +84,17 @@ header .mobileView img {
 }
 
 main .mobileView ul li {
-  padding: 10px 0px;
+  height: 5vw;
+  width: 100vw;
+  line-height: 5vw;
+  vertical-align: middle;
   text-align: center;
   margin: 10px 0px;
   background-color: rgb(218, 26, 50);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px;
 }
 
-main .mobileView ul a {
+main .mobileView ul li a {
   color: white;
   text-decoration: none;
   font-size: large;
@@ -84,17 +102,19 @@ main .mobileView ul a {
 }
 
 .mobileView .banner-text {
+  height: 40vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 40vh;
-  color: antiquewhite;
-  text-shadow: 0.1em 0.1em 0 hsl(200 50% 30%);
+  color: aliceblue;
+  text-shadow: 0.1em 0.1em 0 hsl(200, 50%, 30%);
 }
 
 .mobileView .banner-text h1 {
-  font-size: 3.5rem;
+  font-size: 3.5em;
   margin-bottom: 5vh;
 }
 
@@ -102,4 +122,204 @@ main .mobileView ul a {
   text-align: center;
   font-size: 2.5rem;
   text-transform: capitalize;
+}
+
+/* ====================================== */
+@media screen and (min-width: 400px) {
+  .mobileView {
+    display: none;
+  }
+
+  .desktopView {
+    display: block;
+  }
+
+  /* footer */
+  #footerLeft {
+    display: flex;
+    align-items: flex-end;
+
+    margin-left: 5px;
+    margin-bottom: 10px;
+
+    color: white;
+  }
+
+  #footerRight {
+    width: 30vw;
+  }
+
+  /* Header */
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100vw;
+    height: 75px;
+  }
+
+  .warning {
+    height: 25px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 0.5em;
+  }
+
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 75px;
+  }
+
+  #navLeft {
+    margin-left: 4rem;
+  }
+
+  #navLeft img {
+    width: 200px;
+    height: 40px;
+  }
+
+  #navRight img {
+    width: 130px;
+    height: 35px;
+  }
+
+  #navMiddle {
+    display: flex;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  nav ul li {
+    background-color: rgb(218, 26, 50);
+    margin: 0px 2rem;
+    padding: 8px 15px;
+    border-radius: 10px;
+    min-width: 100px;
+    text-align: center;
+    list-style-type: none;
+    transition: 0.2 ease-in-out;
+  }
+
+  nav ul li:hover {
+    transform: scale(1.1);
+  }
+  /* ====================================== */
+
+  /* Body */
+  #banner-promo {
+    position: relative;
+    display: block;
+    top: 100px;
+    left: 65vw;
+    width: 375px;
+    height: 250px;
+
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.2s ease-in-out;
+
+    cursor: pointer;
+  }
+
+  #banner-promo:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 5px 18px 5px black;
+  }
+
+  .banner-text {
+    position: relative;
+    display: inline-block;
+    width: 375px;
+    top: 200px;
+    left: 65vw;
+    text-align: center;
+    color: rgb(218, 26, 50);
+  }
+
+  .banner-text h1 {
+    font-size: 2em;
+  }
+
+  .banner-text p {
+    font-size: 1.25em;
+    text-transform: capitalize;
+  }
+
+  /* ============================================================= */
+
+  /* ============================================================================= */
+  /* ORDER SECTION */
+  .order {
+    position: relative;
+    width: 600px;
+    top: 250px;
+    margin: auto;
+
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 0px 10px 8px 5px rgba(0, 0, 0, 0.4);
+
+    font-size: 15px;
+    padding: 1em;
+  }
+
+  .order h1 {
+    color: rgb(218, 26, 50);
+    margin-bottom: 0.5em;
+  }
+
+  /* .order h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+  } */
+
+  .order h2,
+  p {
+    line-height: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .order form {
+    border: 1px solid black;
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  .order form input {
+    width: 60%;
+    border: 1px solid lightblue;
+    border-radius: 5px 0px 0px 5px;
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+
+  .order form input::placeholder {
+    font-weight: bold;
+    color: lightgray;
+  }
+
+  .order button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    margin: none;
+    cursor: pointer;
+  }
+
+  .order form input,
+  button {
+    padding: 1em;
+    font-weight: bold;
+  }
 }

@@ -11,13 +11,54 @@
   <body>
     <section id='mainSection'>
       <header>
-
-        <!-- Headr Mobile Only -->
-        <section class='mobileView'>
-          <img src="./images/img_2.PNG" alt="pizzahut logo">
+        <!-- Header desktop View Only -->
+        <section class='desktopView'>
+          <p class='warning'>Due to adverse weather in some locations delivery may take longer than usual. Sorry for the incovenience and thank you for your patience.</p>
+  
+          <nav class='navBar'>
+            <div id='navLeft'>
+              <a href="https://www.pizzahut.co.uk" target="_blank">
+                <img src="images/img_2.PNG" id="logoImage" />
+              </a>  
+            </div>
+            <ul id='navMiddle'>
+              <li><a href="#" class="navlinks">Deals</a></li>
+              <li><a href="#" class="navlinks">Locations</a></li>
+              <li><a href="#" class="navlinks">Help</a></li>
+              <li><a href="#" class="navlinks">Contact</a></li>
+            </ul>
+            <div id='navRight'>
+            <img src="./images/img_3.PNG" alt="cert">
+            </div>
+          </nav>
         </section>
+         <!-- !-- Header Mobile Only --> -->
+          <section class='mobileView'>
+          <img src="./images/img_2.PNG" alt="pizza hut logo">  
+         </section>      
       </header>
+      
       <main class='banner'>
+
+<!-- Body Desktop Only -->
+        <section class='desktopView'>
+          <img src="./images/img_1.jpg" alt="promo" id='banner-promo'>
+          <div class='banner-text'>
+            <h1>Contact-free</h1>
+            <p>on all deliveries across the UK.</p>
+          </div>
+
+          <section class='order'>
+            <h1>Delivery</h1>
+            <h2>Contact-Free</h2>
+            <p>All our deliveries are contact-free to keep everyone healthy. All orders will need to be paid online by debit/credit card.</p>
+            <a href="https://www.pizzahut.co.uk/contactlessdelivery" target="_blank">Learn More</a>
+            <form>
+              <input type="text" placeholder="Postcode" />
+              <button>Find My Hut</button>
+            </form>
+          </section>
+        </section>
 
         <!-- Body Mobile Only -->
         <section class='mobileView'>
@@ -31,9 +72,7 @@
         <h1>Contact-free</h1>
         <p>on all deliveries across the UK.</p>
       </div>
-
-        </section>
-  
+        </section>  
       </main>
     </section>
 
@@ -44,8 +83,7 @@
         <i class="fab fa-facebook-f"></i>
         <i class="fab fa-twitter"></i>
         <i class="fab fa-instagram"></i>
-      </div>
-      
+      </div>      
     </footer>
     
   </body>
