@@ -26,7 +26,8 @@ header {
 
 #mainSection {
   min-height: 100vh;
-  margin-bottom: -75px;
+
+  /* margin-bottom: -75px; */
 }
 
 /* Footer */
@@ -41,6 +42,7 @@ footer {
   background-color: black;
   height: 75px;
   color: white;
+  bottom: -75px;
 }
 
 #footerRight {
@@ -80,7 +82,7 @@ header .mobileView img {
 .banner {
   background-image: url("../images/img_0.jpg");
   background-size: cover;
-  height: 85vh;
+  height: 100vh;
 }
 
 main .mobileView ul li {
@@ -147,6 +149,8 @@ main .mobileView ul li a {
 
   #footerRight {
     width: 30vw;
+    display: flex;
+    float: right;
   }
 
   /* Header */
@@ -164,7 +168,7 @@ main .mobileView ul li a {
     color: white;
     font-size: 14px;
     text-align: center;
-    padding: 0.5em;
+    padding: 1em;
   }
 
   .navBar {
@@ -221,8 +225,10 @@ main .mobileView ul li a {
     display: block;
     top: 100px;
     left: 65vw;
-    width: 375px;
-    height: 250px;
+    /* width: 375px;
+    height: 250px; */
+    width: 340px;
+    height: 200px;
 
     border: 1px solid black;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -259,23 +265,18 @@ main .mobileView ul li a {
 
   /* ============================================================================= */
   /* ORDER SECTION */
+
   .order {
     position: relative;
-    width: 600px;
-    top: 250px;
+    width: 500px;
+    top: 200px;
     margin: auto;
-
     border: 1px solid black;
     background-color: white;
     box-shadow: 0px 10px 8px 5px rgba(0, 0, 0, 0.4);
 
     font-size: 15px;
     padding: 1em;
-  }
-
-  .order h1 {
-    color: rgb(218, 26, 50);
-    margin-bottom: 0.5em;
   }
 
   /* .order h2 {
